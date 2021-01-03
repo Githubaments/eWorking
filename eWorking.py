@@ -22,7 +22,7 @@ with expander:
 days = st.number_input('Number of days worked at home over the year', min_value=0, value=0, max_value=365, format="%i")
 utility = st.number_input('Utility Bill (electricty and heating)', min_value=0.00, value=0.00, max_value=9999.00, format="%f")
 bill_freq = st.radio("Bill Frequency", ("Monthly","Bi-Monthly","Annual"), index=1)
-bb = st.number_input('Montly Broadband Bill', min_value=0.00, value=0.00, max_value=999.99, format="%f",step=0.01) * 12
+bb = st.number_input('Monthly Broadband Bill', min_value=0.00, value=0.00, max_value=999.99, format="%f",step=0.01) * 12
 household = st.number_input('Number of members in the household', min_value=1, value=1, max_value=99, format="%i")
 tax_rate = st.radio("Do you pay tax at the higher rate? (40%)", ("Yes","No"), index=0)
 
